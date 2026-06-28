@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 - Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Simple Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 2. Simple Webpage Content (Heading, Paragraph, Image) -->
+        <section class="hero-section" id="home">
+            <h1>Welcome to My Project</h1>
+            <p>This simple webpage demonstrates fundamental web development skills using semantic HTML5 structures and clean, responsive CSS styling layout structures.</p>
+            <div class="image-wrapper">
+                <!-- Ensure you have an image named 'profile.jpg' in the same folder, or replace this URL -->
+                <img src="profile.png" alt="Project Placeholder Image">
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- 3. Basic Form with single input and submit button -->
+        <section class="form-section" id="contact">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our newsletter to receive the latest updates directly in your inbox.</p>
+            
+            <form class="simple-form" onsubmit="event.preventDefault(); alert('Form submitted!');">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cognifyz Internship.</p>
+    </footer>
+
+</body>
+</html>
