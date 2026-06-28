@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 - Image Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="page-title">Image Manipulation Tasks</h1>
+
+        <!-- Task 1: CSS Image Gallery with Click-to-Enlarge -->
+        <section class="task-section">
+            <h2>1. CSS Lightbox Gallery</h2>
+            <p>Click any thumbnail to enlarge it.</p>
+            
+            <div class="gallery">
+                <!-- Thumbnails link to the ID of their respective lightbox -->
+                <a href="#lightbox-1" class="thumb-link"><img src="img1.png" alt="Thumbnail 1"></a>
+                <a href="#lightbox-2" class="thumb-link"><img src="img2.png" alt="Thumbnail 2"></a>
+                <a href="#lightbox-3" class="thumb-link"><img src="img3.png" alt="Thumbnail 3"></a>
+            </div>
+
+            <!-- Lightbox Containers (Hidden by default) -->
+            <div class="lightbox" id="lightbox-1">
+                <a href="#!" class="close-btn">&times;</a>
+                <img src="img1.png" alt="Enlarged Image 1">
+            </div>
+
+            <div class="lightbox" id="lightbox-2">
+                <a href="#!" class="close-btn">&times;</a>
+                <img src="img2.png" alt="Enlarged Image 2">
+            </div>
+
+            <div class="lightbox" id="lightbox-3">
+                <a href="#!" class="close-btn">&times;</a>
+                <img src="img3.png" alt="Enlarged Image 3">
+            </div>
+        </section>
+
+        <!-- Task 2: Automatic CSS Slideshow -->
+        <section class="task-section">
+            <h2>2. Automatic CSS Slideshow</h2>
+            <p>This slideshow runs on pure CSS @keyframes.</p>
+            
+            <div class="slideshow-container">
+                <div class="slides">
+                    <!-- The images inside the sliding track -->
+                    <img src="img1.png" alt="Slide 1">
+                    <img src="img2.png" alt="Slide 2">
+                    <img src="img3.png" alt="Slide 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
