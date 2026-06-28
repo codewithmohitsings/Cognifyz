@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 - Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>JavaScript Basics</h1>
+        
+        <!-- 1. Color Changing Button -->
+        <section class="card">
+            <h2>1. Magic Button</h2>
+            <p>Click the button below to change its color randomly.</p>
+            <button id="color-btn" class="btn">Change My Color</button>
+        </section>
+
+        <!-- 2. Greeting Alert (Triggered via button to avoid annoying page-load popups) -->
+        <section class="card">
+            <h2>2. Time-Based Greeting</h2>
+            <p>Click to see a greeting based on your current local time.</p>
+            <button id="greeting-btn" class="btn btn-secondary">Show Greeting Alert</button>
+        </section>
+
+        <!-- 3. Basic Addition Calculator -->
+        <section class="card">
+            <h2>3. Simple Calculator</h2>
+            <p>Enter two numbers to add them together.</p>
+            
+            <div class="calculator">
+                <input type="number" id="num1" placeholder="First number">
+                <span class="math-sign">+</span>
+                <input type="number" id="num2" placeholder="Second number">
+                <button id="calc-btn" class="btn btn-success">Add</button>
+            </div>
+            
+            <div id="calc-result" class="result-box">Result: 0</div>
+        </section>
+    </main>
+
+    <!-- Link the JavaScript file at the bottom of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
